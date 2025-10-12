@@ -5,10 +5,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Resource Coffee House logo">
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#favorite">Favorite coffee</a></li>
+                        <li class="nav-item"><a href="#about">About</a></li>
+                        <li class="nav-item"><a href="#app">Mobile app</a></li>
+                        <li class="nav-item"><a href="#contacts">Contact us</a></li>
+                    </ul>
+                </nav>
+                <a class="menu-link" href="menu.html">Menu
+                    <img src="assets/coffee-cup.svg" alt="coffee-cup">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="menu-section">
+                <div class="menu-inner">
+                    <h1><span class="heading__italic">Enjoy</span> premium <br>
+                        coffee at our <br>charming cafe</h1>
+                    <p class="menu-text">With its inviting atmosphere and delicious coffee options, the Coffee<br> House
+                        Resource is a
+                        popular destination for coffee lovers and those<br> seeking a warm and inviting space to enjoy
+                        their favorite beverage.</p>
+                    <a href="menu.html" rel="noopener noreferrer" class="btn">Menu</a>
+                </div>
+            </section>
+            <section class="favorite__section" id="favorite">
+                <div class="favorite__inner">
+                    <h2 class="slider__heading">Choose your<span class="heading__italic"> favorite </span>coffee</h2>
+                    <div class="slider__viewport">
+                        <button class="slider__arrow slider__arrow--prev" aria-label="Previous slide"><img
+                                src="assets/arrow-left.svg" alt="Previous slide"></button>
+                        <div class="slider__track">
+                            <article class="slide" id="slide1">
+                                <img src="assets/coffee-slider-1.png" alt="Frappuccino cup" class="card__image">
+                                <h3 class="card__heading">S'mores Frappuccino</h3>
+                                <p class="card__desc">This new drink takes an espresso and mixes it with brown
+                                    <br>sugar
+                                    and cinnamon
+                                    before topped with oat milk
+                                </p>
+                                <p class="card__price">$5.50</p>
+                                <div class="card__progress">
+                                    <div class="progress__track">
+                                        <div class="progress__fill"></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide" id="slide2">
+                                <img src="assets/coffee-slider-2.png" alt="Caramel Macchiato" class="card__image">
+                                <h3 class="card__heading">S'mores Frappuccino</h3>
+                                <p class="card__desc">Fragrant and unique expresso with rich caramel-peanut <br>syrup,
+                                    with cream under whipped thick foam
+                                </p>
+                                <p class="card__price">$5.00</p>
+                                <div class="card__progress">
+                                    <div class="progress__track">
+                                        <div class="progress__fill"></div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide" id="slide3">
+                                <img src="assets/coffee-slider-3.png" alt="Ice Coffee" class="card__image">
+                                <h3 class="card__heading">Ice Coffee</h3>
+                                <p class="card__desc">A popular summer drink that tones and invigorates. Prepared
+                                    <br>from coffee, milk and ice.
+                                </p>
+                                <p class="card__price">$4.50</p>
+                                <div class="card__progress">
+                                    <div class="progress__track">
+                                        <div class="progress__fill"></div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <button class="slider__arrow slider__arrow--next" aria-label="Next slide"><img
+                                src="assets/arrow-right.svg" alt="Next slide"></button>
+                    </div>
+                    <div class="slider__bullets">
+                        <div class="bullet" aria-current="true" selected></div>
+                        <div class="bullet"></div>
+                        <div class="bullet"></div>
+                    </div>
+                </div>
+            </section>
+            <section>About</section>
+            <section>Download apps</section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">contacts</div>
+    </footer>
 </body>
 
 </html>
