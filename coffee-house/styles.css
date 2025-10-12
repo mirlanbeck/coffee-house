@@ -71,13 +71,13 @@ a {
 /* ----------------- Menu ----------------- */
 /* ------------------------------ */
 
-.menu-section {
+.enjoy-section {
   background: url(assets/img-hero.jpg) lightgray 50% / cover no-repeat;
   border-radius: 40px;
   margin-top: 15px;
 }
 
-.menu-inner {
+.enjoy-inner {
   display: flex;
   max-width: 1360px;
   flex-direction: column;
@@ -98,7 +98,7 @@ h1 {
   font-style: italic;
 }
 
-.menu-text {
+.enjoy-text {
   color: var(--text-light);
   padding: 40px 0 40px 0;
   margin: 0;
@@ -161,6 +161,7 @@ h1 {
 .slider__track {
   display: flex;
   flex-wrap: nowrap;
+  transition: transform 300ms ease-out;
   /* justify-content: center;
   min-width: 480px;
   max-width: 1150px; */
